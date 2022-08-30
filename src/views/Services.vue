@@ -2,7 +2,7 @@
 
   <div class="bg-white">
     <div class="max-w-2xl mx-auto py-10 px-4 sm:px-6 lg:max-w-7xl lg:px-8 lg:py-20">
-      <div class="max-w-3xl mx-auto text-center">
+      <div class="max-w-3xl sm:mt-10 mt-10 mx-auto text-center">
         <h2 class="text-3xl font-extrabold tracking-tight text-gold sm:text-4xl uppercase">
           {{ $t("services.title") }}
         </h2>
@@ -10,8 +10,8 @@
         </p>
       </div>
 
-      <div class="mt-5 lg:mt-20 space-y-16">
-        <div v-for="(person, featureIdx) in ourservices" :key="person.name" class="flex flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-2 py-4 lg:items-center">
+      <div class="mt-5 lg:mt-20">
+        <div v-for="(person, featureIdx) in ourservices" :key="person.name" class="flex mb-5 flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-2 py-4 lg:items-center">
           <div :class="[featureIdx % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-6 xl:col-start-5', 'mt-6 lg:mt-0 lg:row-start-1 lg:col-span-8 xl:col-span-7']">
             <h3 :class="[featureIdx % 2 === 0 ? 'text-center lg:text-left' : 'text-center lg:text-right']" class="text-xl font-medium uppercase" style="font-weight: 800;">{{ person.name }}</h3>
             <p :class="[featureIdx % 2 === 0 ? 'text-center lg:text-justify' : 'text-center lg:text-justify']" class="mt-2 text-base">{{ person.bio }}</p>
@@ -41,23 +41,16 @@
 <script>
 
 export default {
-  data() {
-    return {
-    }
-  },
+  data() {  return { } },
 
-  components: {
-   
-  },
+  components: { },
 
   setup() {
     return {
     }
   },
 
-  mounted() {
-
-  },
+  mounted() { },
 
 
   computed: {
