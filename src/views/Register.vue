@@ -80,9 +80,7 @@
 
 
           <div>
-            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-gold bg-bord hover:bg-bord-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold" required>
-              submit
-            </button>
+            <button type="submit" class="w-full flex justify-center py-2 px-4 text-white bg-black rounded-md shadow-sm">submit</button>
           </div>
         </form>
 

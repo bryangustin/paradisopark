@@ -1,4 +1,5 @@
 import { createApp} from 'vue';
+// import VueAnalytics from 'vue-analytics';
 import App from './App.vue';
 import router from './router';
 import store from './store';
@@ -15,8 +16,10 @@ import 'tw-elements';
 import VuePictureSwipe from 'vue-picture-swipe';
 
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// Vue.use(VueAnalytics, {id: process.env.VUE_ANALYTICS_ID});
 
 
 createApp(App).use(store).use(router).use(VueAxios, axios).use(moment).use(VCalendar,{}).use(createPersistedState).use(VueCookieComply).use(i18n).use('vue-picture-swipe', VuePictureSwipe).mount('#app')

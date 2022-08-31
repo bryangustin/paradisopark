@@ -1,8 +1,8 @@
 <template>
-    <section class="max-w-xl mx-auto pt-8 pb-4 px-4 sm:pt-12 sm:px-6 lg:max-w-7xl lg:px-8 bg-white">
-        <div class="pt-6">
+    <section class="max-w-xl mx-auto pt-16 pb-4 sm:pt-8 px-4 sm:px-6 lg:max-w-7xl lg:px-8 bg-white">
+        <div class="pt-10">
             <!-- Image gallery -->
-            <div class="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
+            <div class="mt-0 md-mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-3 lg:gap-x-8">
                 <div class="hidden aspect-w-3 aspect-h-4  overflow-hidden lg:block">
                     <img :src="product.images[0].src" :alt="product.images[0].alt" class="w-full h-full object-center object-cover" />
                 </div>

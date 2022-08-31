@@ -1,1 +1,231 @@
-{"message": "hello i18n !!"}
+{
+    "menus": {
+        "menu1": "Paradise",
+        "menu2": "Services",
+        "dMenu1": "Sauna & Steam room",
+        "dMenu2": "Swimming pool",
+        "dMenu3": "Winter Garden",
+        "dMenu4": "Garden and pond",
+        "dMenu5": "Caterer",
+        "menu3": "Bedrooms",
+        "menu4": "Events",
+        "contact":"Contact"
+    },
+
+    "home": {
+        "title1": "A true",
+        "title2": "paradise,",
+        "title3": "close to your home...",
+        "subtitle1": "Would you like to relax in a totally unusual setting in Belgium, for a few hours, a day or a longer stay?",
+        "subtitle2": "Take a dive into a 30 degree pool, enjoy a bubble bath to relax, a Nordic bath or a Moroccan hammam?",
+        "subtitle3": "All this in a unique setting and in one same place?",
+        "button": "Book now",
+        "description": "Discover the Paradiso Park Estate, a 20 hectare domain between Brussels and Antwerp dedicated to nature and well-being ...",
+
+        "philosophy": {
+           " title": "Our philosophy",
+            "description1": "Our domain is designed for people who need to disconnect or have a real change of scenery a few kilometres from home.  In a totally new place, nature and well-being are celebrated with equipment inspired by rituals from around the world.",
+            "description2": "The estate is a majestic place that offers an immediate sense of travel and change of air. Book the estate for a few hours or a few days, with friends, for an event or a seminar and enjoy a fully privatised estate and all the services it offers."
+        },
+
+        "category": {
+            "services": {
+                "title": "Our services",
+                "description": "The domain offers a whole range of services that will make your experience unique, an indoor heated swimming pool, an indoor and outdoor sauna, a Moroccan hammam... Let yourself be surprised by the quality of the facilities of the estate that will take you on a journey through the world and its different well-being rituals..."
+            },
+            "rooms": {
+                "title": "The rooms",
+                "description": "Five beautifully appointed rooms and facilities that can accommodate up to 30 people on site. Discover our 5 rooms and all their services."
+            },
+            "events": {
+                "title": "Your events",
+                "description": ""
+            }
+        }
+    },
+
+    "services": {
+        "title":" Our services",
+        "sauna": {
+            "title": "Sauna & Hammam",
+            "description": "There is nothing like a sauna or a hammam to relax and detoxify your muscles. Discover our wonderful hammam and indoor sauna, as well as our Nordic bath and outdoor sauna, ideal when the temperature drops to enjoy a Finnish fitness experience.",
+            "alt": "Sauna"
+        },
+        "pool": {
+            "title": "Pool",
+            "description": "A huge indoor pool heated to 30 degrees as the central feature of the property. No, you are not dreaming... You never dreamed of such a paradise like pool in total privacy….",
+            "alt":" pool"
+        },
+        "wintergarden": {
+            "title": "Winter garden",
+            "description": "An evening by the fire, with a good book and a delicious cup of tea? A moment with friends to rethink the world? An unusual place to meet up with friends or colleagues? Enjoy our winter garden during the coldest months of the year. A unique and comforting environment, just a stone's throw from your home...",
+            "alt": "Winter garden"
+        },
+        "garden": {
+            "title": "Garden and pond",
+            "description": "Let yourself be surprised by the variety of landscapes and the richness of the surroundings: between wild nature, ponds, gardens and waterfalls... Enjoy the sun on your lounger or a relaxing Nordic bath, but above all enjoy the tranquillity of this magical and timeless place.",
+            "alt": "Garden and pond"
+        },
+        "catering": {
+            "title": "Catering",
+            "description": "We offer all the facilities you need to organise your meals during your stay in Paradiso Park, but you can also call on us to organise a catering service. We work with a number of regular partners to meet all your requirements. Do not hesitate to contact us using the form at the bottom of the page and tell us your wishes.",
+            "alt": "Catering"
+        }
+    },
+    
+    "events": {
+        "title": "Our events",
+        "wedding": {
+            "title": "Private events",
+            "description1": "A birthday, a wedding or a bachelor party? Our space lends itself to all those days that mark your existence, whatever the type of event. An event in Paradiso Park will remain forever in the memory of all those who accompany you during your stay...",
+            "description2": "Are you interested?  Do not hesitate to fill in the form at the bottom of the page to plan your event with us!",
+            "alt":""
+        },
+        "seminar": {
+            "title": "Professional events",
+            "description1": "Would you like to organise a seminar, yoga classes, a wellness treatment or an event for your company? Do not hesitate to contact us directly. We can organise a whole range of private events for you, adapting our formulas to your needs.",
+            "description2": "Are you interested?  Do not hesitate to fill in the form at the bottom of the page to plan your event with us!",
+            "alt": ""
+        }
+    },
+   
+    "booking": {
+        "title": "Make your choice",
+        "timeslot": {
+            "title":" Reserve a time slot",
+            "description": "Looking for a break between meetings, or a moment in a unique place with a few friends or a working group?",
+            "button": ""
+        },
+        "fullday": {
+            "title": "Book an on-site stay",
+            "description": "Want to share an incredible moment with family, colleagues or friends?  Want to organise a group fitness retreat? Discover our offers for stays of one or more nights in the heart of the Paradiso Park Estate",
+            "button": ""
+        }
+    },
+
+    "contact": {
+        "title": "Contact",
+        "description": "Are you interested in renting Paradiso Park and do you want more information? Fill in this form and our team will contact you as soon as possible.",
+        "address": "Address",
+        "phone": "Phone number",
+        "mail": "E-mail",
+        "label": {
+            "name": "Name and first name",
+            "mail": "E-mail",
+            "phone": "Phone number",
+            "message": "Your question"
+        }
+    },
+   
+    "privacy": {
+
+        "title": "Privacy Policy & Cookie Policy",
+
+        "sub1": "A. Introduction",
+        "hed1": "Introduction",
+        "cond1": "The privacy of visitors to our website is very important to us, and we are committed to protecting it. This policy details what we do with your personal information.",
+        "cond2": "Consenting to our use of cookies in accordance with this policy when you first visit our website allows us to use cookies each time you visit our site.",
+
+        "sub2": "B. Source",
+        "hed2": "This document was created using a template from SEQ Legal (seqlegal.com)",
+
+        "sub3": "C. Collection of personal information",
+        "hed3": "The following types of personal information may be collected, stored and used :",
+        "cond3": "Information about your computer, including your IP address, geographic location, browser type and version, and operating system ;",
+        "cond4": "Information about your visits to and use of this website including the referring source, length of visit, page views, and website navigation paths ;",
+        "cond5": "Information such as your e-mail address, which you provide to us when you register with the site ;",
+        "cond6": "Information you enter when you create a profile on our website such as your name, profile picture, gender, date of birth, relationship status, interests and hobbies, education and work history ;",
+        "cond7": "Information such as your name and email address, which you enter to subscribe to our emails and/or newsletters ;",
+        "cond8": "Information that you enter when you use the services of our website ;",
+        "cond9": "Information generated while using our site, including when, how often and under what circumstances you use it ;",
+        "cond10": "Information relating to the purchases you make, the services you use or the transactions you carry out on our site, which includes your name, address, telephone number, e-mail address and banking information ;",
+        "cond11": "Information that you post to our website with the intention of posting to the internet, which includes your username, profile pictures and the content of your posts ;",
+        "cond12": "Information contained in any communications you send to us by email or on our website, including their content and metadata ;",
+        "cond13": "Any other personal information you provide to us ;",
+        "cond14": "Before disclosing personal information about another person to us, you must obtain that person's consent to the disclosure and processing of that personal information under the terms of this policy.",
+
+        "sub4": "D. Use of your personal information",
+        "hed4": "Personal information provided to us through our website will be used for the purposes described in this policy or on the relevant site pages. We may use your personal information to:",
+        "cond15": "To administer our website and our business ;",
+        "cond16": "Personalize our website for you ;",
+        "cond17": "Enable your use of the services offered on our website ;",
+        "cond18": "Send you the goods purchased on our site ;",
+        "cond19": "To provide you with the services purchased on our site ;",
+        "cond20": "Send you statements, invoices and payment reminders, and collect your payments ;",
+        "cond21": "Send you non-marketing commercial communications ;",
+        "cond22": "Send you email notifications that you have specifically requested ;",
+        "cond23": "Send you our newsletter by email, if you have requested it (you can inform us at any time of your wish to no longer receive our newsletter) ;",
+        "cond24": "Send you marketing communications relating to our business or carefully selected third-party businesses which we think may be of interest to you, by post, or where you have expressly consented, by email or similar technology (you can tell us at any time of your wish to no longer receive marketing communications) ;",
+        "cond25": "Provide statistical information about our users to third parties (without such third parties being able to identify individual users with this information) ;",
+        "cond26": "Dealing with requests and complaints relating to your website made by or about you ;",
+        "cond27": "Maintaining the security of our website and preventing fraud ;",
+        "cond28": "Checking compliance with the terms and conditions that govern the use of our website (including monitoring private messages sent through our website's private messaging service) ;",
+        "cond29": "Other uses.",
+        "cond30": "If you submit personal information to our website for the purpose of publishing it, we will publish it and may use that information in accordance with the permissions you grant us. Your privacy settings can be used to limit the publication of your information on our website and can be adjusted in your privacy settings on the website. Without your express consent, we will not provide your personal information to third parties for their direct marketing or that of other third parties.",
+
+        "sub5": "E. Disclosure of your personal information",
+        "hed5": "We may disclose your personal information to any of our employees, officers, insurers, professional advisers, agents, suppliers, or subcontractors as reasonably necessary for the purposes set out in this policy. We may disclose your personal information to any member of our corporate group (this means our subsidiaries, our ultimate holding company and all of its subsidiaries) insofar as reasonably necessary for the purposes set out in this policy.We may disclose your personal information :",
+        "cond31": "To the extent that we are required to do so by law ;",
+        "cond32": "As part of any ongoing or future legal proceedings ;",
+        "cond33": "To establish, exercise or defend our legal rights (including providing information to others for the purposes of fraud prevention and reducing credit risk);",
+        "cond34": "To the purchaser (or potential purchaser) of any business or asset in our possession which we wish (or contemplate) to sell;",
+        "cond35": "To anyone whom we reasonably believe to be a party to a court or other competent authority for the disclosure of such personal information if, in our opinion, such court or authority would be likely to require disclosure of such personal information. ",
+        "cond36": "Except as otherwise provided in this policy, we will not share your personal information with third parties.",
+
+        "sub6": "F. International data transfers",
+        "hed6": "The information we collect may be stored, processed and transferred to any country in which we operate, to enable us to use the information in accordance with this policy.",
+        "cond37": "The information we collect may be transferred to the following countries, which do not have data protection laws equivalent to those in force in the European Economic Area: the United States of America, Russia, Japan, China and India.",
+        "cond38": "Personal information that you publish on our website or submit for publication may be available, via the internet, around the world. We cannot prevent the use, good or bad, of this information by third parties.",
+        "cond39": "You expressly agree to the transfer of personal information described in this Section F.",
+
+        "sub7": "G. Retention of your personal information",
+        "hed7": "This Section G details our data retention policies and procedures, designed to help us comply with our legal obligations regarding the retention and deletion of personal information.",
+        "cond40": "Personal information that we process for any purpose is not kept longer than necessary for that purpose or those purposes.",
+        "cond41": "Without prejudice to Article G-2, we will generally delete personal data in these categories.",
+        "cond42": "Notwithstanding the other provisions of this Section G, we will retain documents (including electronic documents) containing personal data: 1. To the extent that we are required to do so by law; 2. If we believe that the documents may be relevant to any pending or potential legal proceedings; 3. To establish, exercise or defend our legal rights (including providing information to others for the purposes of fraud prevention and reducing credit risk).",
+
+        "sub8": "H. Security of your personal information",
+        "hed8": "We will take reasonable technical and organizational precautions to prevent the loss, misuse or alteration of your personal information.",
+        "cond43": "We will store all personal information you provide to us on secure servers (password and firewall protected).",
+        "cond44": "All electronic financial transactions conducted through our website will be protected by encryption technologies.",
+        "cond45": "You acknowledge that the transmission of information over the internet is inherently insecure, and that we cannot guarantee the security of your data sent over the internet.",
+        "cond46": "You are responsible for keeping the password you use to access our website confidential; we will not ask you for your password (except when you log in to our website).",
+
+        "sub9": "I. Amendements",
+        "hed9": "We may occasionally update this policy by posting a new version on our website. You should check this page regularly to ensure that you are aware of any changes made to this policy. We may notify you of changes to this policy by email or through our website's private messaging service.",
+
+        "sub10": "J. Your Rights",
+        "hed10": "You may ask us to provide you with any personal information we hold about you; the transfer of such information will be subject to the following conditions:",
+        "cond47": "The Settlement of Fees.",
+        "cond48": "Presentation of sufficient proof of your identity (for these purposes we generally accept a notarized photocopy of your passport plus an original copy of a utility bill showing your current address).",
+        "cond49": "We may withhold personal information that you request to the extent permitted by law.",
+        "cond50": "You can ask us at any time not to process your personal information for marketing purposes.",
+        "cond51": "In practice, you will express your consent in advance to our use of your personal information for marketing purposes or we will provide you with an opportunity to opt out of the use of your personal information for marketing purposes.",
+
+        "sub11": "K. Third Party Websites",
+        "hed11": "Our website contains hypertext links to third-party websites and information about them. We have no control over these sites, and are not responsible for their privacy policies or practices.",
+
+        "sub12": "L. Updating Information",
+        "hed12": "Please let us know if the personal information we hold about you needs to be corrected or updated.",
+
+        "sub13": "M. Cookies",
+        "hed13": "Our website uses cookies. A cookie is a file containing an identifier (a string of letters and numbers) sent by a web server to a web browser and stored by the browser. The identifier is then sent back to the server each time browser requests a page from the server Cookies can be persistent or session cookies: a persistent cookie is stored by the browser and remains valid until its expiry date, unless deleted by the user before this expiration date; as for a session cookie, it expires at the end of the user session, when the browser is closed. Cookies generally do not contain any information allowing a user to be personally identified, but the personal information we store about you may be linked to information stored in cookies and obtained by cookies.",
+        "cond52": "The names of the cookies we use on our website and the purposes for which we use them are described below: We use Google Analytics and Adwords on our website to: recognize a computer when a user visits the website / track users as they browse the website / enable the use of a shopping cart on the website / improve the use of a website / analyze the use of the website / administer the website / prevent the fraud and improve website security / personalize the website for each user / send targeted advertisements that may be of interest to certain users.",
+        "cond53": "Most browsers allow you to refuse or accept cookies. For example: 1. With Internet Explorer (version 10), you can block cookies using the cookie management override settings available by clicking  Tools, Internet Options, Privacy then Advanced; 2. With Firefox (version 24), you can block all cookies by clicking on Tools, Options, Privacy and then selecting Use custom settings for history from the drop-down menu and unchecking Accept cookies from sites 3. With Chrome (version 29), you can block all cookies by accessing the Customize and control menu and then clicking on Settings, Show advanced settings and Content settings and then selecting Prevent sites from setting data in the Cookies header.",
+        "cond54": "Blocking all cookies will have a negative impact on the use of many websites. If you block cookies, you will not be able to use all the features of our website.",
+        "cond55": "You can delete cookies already stored on your computer. Example: 1. With Internet Explorer (version 10), you must delete the cookies file manually; 2. With Firefox (version 24), you can delete cookies by clicking Tools, Options, and Privacy, then selecting Use custom settings for history and by clicking on “Show cookies”, then on “Delete all cookies” 3. with Chrome (version 29), you can delete all cookies by accessing the “Customize and control” menu and then clicking on Settings, Show advanced settings and Delete browsing data then Delete cookies and module data from other sites before clicking on Delete browsing data.",
+        "cond56": "Deleting cookies will have a negative impact on the use of many websites.",
+
+        "sub14": "N. Contact the Data Controller",
+        "hed14": "Paradiso park, 269 Lintsesteenweg, 2570 Duffel (Belgium). Tel +32 493 47 07 07, Email info@paradisopark.be"
+    },
+
+    "cookies": {
+        "title": "Dear visitor",
+        "click": "By clicking 'Accept All' you accept the",
+        "terms": "Terms of use",
+        "and": "as well as the",
+        "privacy": "processing of personal data",
+        "service": "in order to be able to provide the service."
+    }
+}

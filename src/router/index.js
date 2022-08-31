@@ -76,19 +76,19 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard,
-      meta: {
-          requiresAuth: true,
-          is_admin: true
-      }
+    meta: {
+      requiresAuth: true,
+      is_admin: true
+    }
   },
   {
     path: '/useraccount',
     name: 'Useraccount',
     component: Useraccount,
-      meta: {
-          requiresAuth: true,
-          is_user: true
-      }
+    meta: {
+      requiresAuth: true,
+      is_user: true
+    }
   },
   {
     path: '/booking',
@@ -98,7 +98,10 @@ const routes = [
   {
     path: '/timeslot',
     name: 'Timeslot',
-    component: Timeslot
+    component: Timeslot,
+    meta: {
+      requiresAuth: true
+    }
   },
   {
     path: '/additionaltimeslot',
@@ -113,7 +116,10 @@ const routes = [
   {
     path: '/fullday',
     name: 'Fullday',
-    component: Fullday
+    component: Fullday,
+    meta: {
+       requiresAuth: true 
+      }
   },
   {
     path: '/additionalfullday',
@@ -196,7 +202,7 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
   /*eslint-disable */
-  scrollBehavior (to, from, savedPosition) {
+  scrollBehavior(to, from, savedPosition) {
     window.scrollTo(0, 0);
   }
 })

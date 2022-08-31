@@ -2,27 +2,24 @@ import { createI18n } from 'vue-i18n'
 
 
 function loadLocaleMessages() {
-    const locales = require.context('./locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
-    const messages = {
 
+    const messages = {
         en: {
             // desktopmenu
-             desktopMenu:{
-                menu1:'Paradiso',
-                menu2:'Services',
-                dropMenu:{
-                    dMenu1:'Sauna & Hammam',
-                    dMenu1:'Piscine',
-                    dMenu1:'Jardin d\'hiver',
-                    dMenu1:'Jardin et étang',
-                    dMenu1:'Traiteur',
-                },
-                menu3:'Chambres',
-                menu4:'Événements',
-                menu5:'Contact',
-             },
-            
-             // Home
+            menus: {
+                menu1: "Paradise",
+                menu2: 'Services',
+                dMenu1: 'Sauna & Steam room',
+                dMenu2: 'Swimming pool',
+                dMenu3: 'Winter Garden',
+                dMenu4: 'Garden and pond',
+                dMenu5: 'Caterer',
+                menu3: 'Bedrooms',
+                menu4: 'Events',
+                contact:'Contact',
+
+            },
+            // Home
             home: {
                 title1: "A true",
                 title2: "paradise,",
@@ -119,7 +116,7 @@ function loadLocaleMessages() {
 
             // Contact
             contact: {
-                title: '',
+                title: 'Contact',
                 description: 'Are you interested in renting Paradiso Park and do you want more information? Fill in this form and our team will contact you as soon as possible.',
                 address: 'Address',
                 phone: 'Phone number',
@@ -248,6 +245,21 @@ function loadLocaleMessages() {
         },
 
         fr: {
+
+             // desktopmenu
+             menus: {
+                menu1: "Paradiso",
+                menu2: 'Services',
+                dMenu1: 'Sauna & Hammam',
+                dMenu2: 'Piscine',
+                dMenu3: 'Jardin d\'hiver',
+                dMenu4: 'Jardin et étang',
+                dMenu5: 'Traiteur',
+                menu3: 'Chambres',
+                menu4: 'Événements',
+                contact:'Contactez',
+            },
+
             // Home
             home: {
                 title1: "Un lieu",
@@ -472,6 +484,22 @@ function loadLocaleMessages() {
         },
 
         nl: {
+
+             // desktopmenu
+             menus: {
+                menu1: "Paradiso",
+                menu2: 'Services',
+                dMenu1: 'Sauna & Hammam',
+                dMenu2: 'Piscine',
+                dMenu3: 'Jardin d\'hiver',
+                dMenu4: 'Jardin et étang',
+                dMenu5: 'Traiteur',
+                menu3: 'Chambres',
+                menu4: 'Événements',
+                contact:'Contact',
+
+            },
+
             // Home
             home: {
                 title1: "Een hemelse",
@@ -695,16 +723,16 @@ function loadLocaleMessages() {
             },
 
         },
-
     }
-
-    locales.keys().forEach(key => {
-        const matched = key.match(/([A-Za-z0-9-_]+)\./i)
-        if (matched && matched.length > 1) {
-            const locale = matched[1]
-            messages[locale] = locales(key).default
-        }
-    })
+    // const locales = require.context(messages.en, true, /[A-Za-z0-9-_,\s]+\.json$/i)
+    // locales.keys().forEach(key => {
+    //     const matched = key.match(/([A-Za-z0-9-_]+)\./i)
+    //     if (matched && matched.length > 1) {
+    //         const locale = matched[1]
+    //         console.log('locale', locale);
+    //         messages[locale] = locales(key).default
+    //     }
+    // })
     return messages
 }
 
