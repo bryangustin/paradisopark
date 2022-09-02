@@ -1,9 +1,9 @@
 <template>
-    <section aria-labelledby="collection-heading" class="h-screen max-w-xl mx-auto pt-24 px-4 sm:pt-32 sm:px-6 lg:max-w-7xl lg:px-8">
+    <section aria-labelledby="collection-heading" class="max-w-xl mx-auto pt-16 px-4  sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 id="collection-heading" class="mt-10 text-center text-4xl font-extrabold tracking-tight text-gray-900">{{ $t("booking.title") }}</h2>
         <!-- <p class="text-center mt-4 text-base text-gray-500">Choose your category</p> -->
 
-        <div class="lg:max-w-3xl mx-auto mt-20 mb-20 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-20">
+        <div class="lg:max-w-3xl mx-auto mt-10 mb-10 space-y-12 lg:space-y-0 lg:grid lg:grid-cols-2 lg:gap-x-20">
         <router-link :to="collection.href" v-for="collection in collections" :key="collection.name" class="group block">
             <div aria-hidden="true" class="aspect-w-3 aspect-h-2 overflow-hidden group-hover:opacity-75 lg:aspect-w-5 lg:aspect-h-6">
             <img :src="collection.imageSrc" :alt="collection.imageAlt" class="w-full h-full object-center object-cover" />
