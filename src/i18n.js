@@ -5,7 +5,9 @@ function loadLocaleMessages() {
 
     const messages = {
         en: {
-            // desktopmenu
+
+
+          // desktopmenu
             menus: {
                 menu1: "Paradise",
                 menu2: 'Services',
@@ -17,6 +19,7 @@ function loadLocaleMessages() {
                 menu3: 'Bedrooms',
                 menu4: 'Events',
                 contact:'Contact',
+                btn:'BOOK NOW'
 
             },
             // Home
@@ -47,7 +50,7 @@ function loadLocaleMessages() {
                     },
                     events: {
                         title: 'Your events',
-                        description: '',
+                        description: 'Five beautifully appointed rooms and facilities that can accommodate up to 30 people on site. Discover our 5 rooms and all their services.',
                     },
                 },
             },
@@ -127,6 +130,15 @@ function loadLocaleMessages() {
                     phone: 'Phone number',
                     message: 'Your question',
                 },
+            },
+
+            term:'Terms',
+            policy:'Policy',
+            faq:'FAQ',
+            newsletter:{
+                text:'SUBSCRIBE TO OUR NEWSLETTER',
+                placeholder:'Enter your email',
+                btn:'Subscribe'
             },
 
             // Privacy policy
@@ -242,6 +254,14 @@ function loadLocaleMessages() {
                 service: 'in order to be able to provide the service.',
             },
 
+            
+            copytext:'Paradise Park, All rights reserved - Website carefully crafted by',
+
+            
+
+            
+
+
         },
 
         fr: {
@@ -258,6 +278,7 @@ function loadLocaleMessages() {
                 menu3: 'Chambres',
                 menu4: 'Événements',
                 contact:'Contactez',
+                btn:'RÉSERVER'
             },
 
             // Home
@@ -369,8 +390,16 @@ function loadLocaleMessages() {
                     message: 'Votre question',
                 },
             },
+            term:'Perme',
+            policy:'Politique',
+            faq:'FAQ',
+            newsletter:{
+                text:"S'ABONNER À NOTRE NEWSLETTER",
+                placeholder:'Entrez votre courriel',
+                btn:"S'abonner à"
+            },
 
-            // Privacy policy
+             // Privacy policy
             privacy: {
                 title: "Politique de confidentialité & politique en matière de cookies",
                 sub1: "A. Introduction",
@@ -481,6 +510,8 @@ function loadLocaleMessages() {
                 service: 'afin de pouvoir fournir le service.',
             },
 
+            copytext:'Paradis Se Garer, Tous Droits Réservés - Site Soigneusement Conçu Par',
+
         },
 
         nl: {
@@ -497,6 +528,7 @@ function loadLocaleMessages() {
                 menu3: 'Chambres',
                 menu4: 'Événements',
                 contact:'Contact',
+                btn:'Boeken'
 
             },
 
@@ -610,6 +642,15 @@ function loadLocaleMessages() {
                 },
             },
 
+           term:'Termijn',
+            policy:'Beleid',
+            faq:'FAQ',
+            newsletter:{
+                text:'ABONNEER U OP ONZE NIEUWSBRIEF',
+                placeholder:'Voer uw e-mail',
+                btn:'Inschrijven'
+            },
+
             // Privacy policy
             privacy: {
 
@@ -721,6 +762,8 @@ function loadLocaleMessages() {
                 and: 'en ook de',
                 service: 'om de dienst te kunnen verlenen.',
             },
+
+            copytext:'Paradijs Parc, Alle Rechten Voorbehouden - Website Zorgvuldig Gemaakt Door',
 
         },
     }

@@ -9,7 +9,8 @@
         "dMenu5": "Caterer",
         "menu3": "Bedrooms",
         "menu4": "Events",
-        "contact":"Contact"
+        "contact":"Contact",
+        "btn":"BOOK NOW"
     },
 
     "home": {
@@ -39,7 +40,7 @@
             },
             "events": {
                 "title": "Your events",
-                "description": ""
+                "description": "Five beautifully appointed rooms and facilities that can accommodate up to 30 people on site. Discover our 5 rooms and all their services."
             }
         }
     },
@@ -227,5 +228,7 @@
         "and": "as well as the",
         "privacy": "processing of personal data",
         "service": "in order to be able to provide the service."
-    }
+    },
+
+    "copytext":"Paradise Park, Alle rechten voorbehouden - Website zorgvuldig gemaakt door"
 }
