@@ -182,7 +182,7 @@ function loadLocaleMessages() {
                 cond32: "As part of any ongoing or future legal proceedings ;",
                 cond33: "To establish, exercise or defend our legal rights (including providing information to others for the purposes of fraud prevention and reducing credit risk);",
                 cond34: "To the purchaser (or potential purchaser) of any business or asset in our possession which we wish (or contemplate) to sell;",
-                cond35: "To anyone whom we reasonably believe to be a party to a court or other competent authority for the disclosure of such personal information if, in our opinion, such court or authority would be likely to require disclosure of such personal information. ",
+                cond35: "To anyone whom we reasonably believe to be a party to a court or other competent authority for the disclosure of such personal information if, in our opinion, such court or authority would be likely to require disclosure of such personal information.",
                 cond36: "Except as otherwise provided in this policy, we will not share your personal information with third parties.",
 
                 sub6: "F. International data transfers",
