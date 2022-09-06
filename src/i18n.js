@@ -9,14 +9,14 @@ function loadLocaleMessages() {
 
           // desktopmenu
             menus: {
-                menu1: "Paradise",
+                menu1: "Paradiso",
                 menu2: 'Services',
                 dMenu1: 'Sauna & Steam room',
                 dMenu2: 'Swimming pool',
                 dMenu3: 'Winter Garden',
                 dMenu4: 'Garden and pond',
-                dMenu5: 'Caterer',
-                menu3: 'Bedrooms',
+                dMenu5: 'Catering',
+                menu3: 'Rooms',
                 menu4: 'Events',
                 contact:'Contact',
                 btn:'BOOK NOW'
@@ -255,7 +255,7 @@ function loadLocaleMessages() {
             },
 
             
-            copytext:'Paradise Park, All rights reserved - Website carefully crafted by',
+            copytext:'Paradiso Park, All rights reserved - Website carefully crafted by',
 
             
 
@@ -390,8 +390,8 @@ function loadLocaleMessages() {
                     message: 'Votre question',
                 },
             },
-            term:'Perme',
-            policy:'Politique',
+            term:'Termes',
+            policy:'Vie privée',
             faq:'FAQ',
             newsletter:{
                 text:"S'ABONNER À NOTRE NEWSLETTER",
@@ -510,7 +510,7 @@ function loadLocaleMessages() {
                 service: 'afin de pouvoir fournir le service.',
             },
 
-            copytext:'Paradis Se Garer, Tous Droits Réservés - Site Soigneusement Conçu Par',
+            copytext:'Paradiso Park, Tous Droits Réservés - Site Soigneusement Conçu Par',
 
         },
 
@@ -519,14 +519,14 @@ function loadLocaleMessages() {
              // desktopmenu
              menus: {
                 menu1: "Paradiso",
-                menu2: 'Services',
+                menu2: 'Diensten',
                 dMenu1: 'Sauna & Hammam',
-                dMenu2: 'Piscine',
-                dMenu3: 'Jardin d\'hiver',
-                dMenu4: 'Jardin et étang',
-                dMenu5: 'Traiteur',
-                menu3: 'Chambres',
-                menu4: 'Événements',
+                dMenu2: 'Zwembad',
+                dMenu3: 'Wintertuin',
+                dMenu4: 'Tuin en vijver',
+                dMenu5: 'Catering',
+                menu3: 'Kamers',
+                menu4: 'Evenementen',
                 contact:'Contact',
                 btn:'Boeken'
 
@@ -560,7 +560,7 @@ function loadLocaleMessages() {
                     },
                     events: {
                         title: 'Uw evenementen',
-                        description: '',
+                        description: 'Vijf prachtig ingerichte kamers en slaapgelegenheid die ter plaatse plaats bieden aan maximaal 30 personen. Ontdek onze 5 kamers en al hun diensten.',
                     },
                 },
             },
@@ -642,8 +642,8 @@ function loadLocaleMessages() {
                 },
             },
 
-           term:'Termijn',
-            policy:'Beleid',
+           term:'Voorwaarden',
+            policy:'Privacy',
             faq:'FAQ',
             newsletter:{
                 text:'ABONNEER U OP ONZE NIEUWSBRIEF',
@@ -763,7 +763,7 @@ function loadLocaleMessages() {
                 service: 'om de dienst te kunnen verlenen.',
             },
 
-            copytext:'Paradijs Parc, Alle Rechten Voorbehouden - Website Zorgvuldig Gemaakt Door',
+            copytext:'Paradiso Park, Alle Rechten Voorbehouden - Website Zorgvuldig Gemaakt Door',
 
         },
     }
