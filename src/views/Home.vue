@@ -1,7 +1,7 @@
 <template>
 <main class="bg-white">
-    <section class="relative flex items-center justify-start overflow-hidden">
-        <div class=" z-30 mt-10 py-16 sm:py-20 lg:max-w-7xl lg:mx-auto lg:py-32 lg:px-8 w-screen mx-auto">
+    <section class="relative flex items-center justify-center overflow-hidden h-screen">
+        <div class="mt-10 z-30 lg:max-w-7xl lg:mx-auto lg:px-8 w-screen mx-auto" data-aos="fade-down" data-aos-anchor-placement="top">
             <h1 class="text-center lg:text-left uppercase mt-0 text-3xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">{{ $t("home.title1") }} <br>{{ $t("home.title2") }} <br> {{ $t("home.title3") }}</h1>
             <!-- CAROUSEL-->
             <div id="carouselServicesCaptions" class="h_main_carousel carousel slide" data-bs-ride="carousel">
@@ -36,16 +36,16 @@
 
     </section>
 
-    <section class="md:pt-16 sm:pt-8 lg:max-w-7xl lg:mx-auto  lg:px-8">
+    <section class="md:pt-16 pt-16 lg:max-w-7xl lg:mx-auto  lg:px-8">
         <div class="">
-            <div class="mb-8 px-4 w-full mx-auto text-center sm:px-6 lg:px-0">
+            <div class="md:mb-8 mb-0 px-4 w-full mx-auto text-center sm:px-6 lg:px-0">
                 <h2 style="font-size: 1.5em;">{{ $t("home.description") }}</h2>
             </div>
             <!-- Category section -->
-            <div class="p_xs_img" aria-labelledby="category-heading" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="p_xs_img" aria-labelledby="category-heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
                 <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8 sm:px-5">
-                    <div class="group aspect-w-2 aspect-h-1 overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
+                    <div class="group aspect-w-2 md:aspect-h-1 sm:aspect-h-1 aspect-h-2 overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
                         <img src="img/servicesCategory.jpeg" alt="" class="object-center absolute z-1 object-cover group-hover:opacity-75" />
                         <!-- <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-30" /> -->
                         <div class="p-6 flex absolute z-30 items-end">
@@ -60,7 +60,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="group aspect-w-2 aspect-h-1 overflow-hidden sm:relative sm:aspect-none sm:h-full">
+                    <div class="group aspect-w-2 md:aspect-h-1 sm:aspect-h-1 aspect-h-2 overflow-hidden sm:relative sm:aspect-none sm:h-full">
                         <img src="img/roomsCategory.jpeg" alt="" class="object-center object-cover group-hover:opacity-75 absolute sm:inset-0 sm:w-full sm:h-full" />
                         <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
                         <div class="p-6 flex items-end sm:absolute sm:inset-0">
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="group aspect-w-2 aspect-h-1 overflow-hidden sm:relative sm:aspect-none sm:h-full">
+                    <div class="group aspect-w-2 md:aspect-h-1 sm:aspect-h-1 aspect-h-2 overflow-hidden sm:relative sm:aspect-none sm:h-full">
                         <img src="img/eventsCategory.jpeg" alt="" class="object-center object-cover group-hover:opacity-75 absolute sm:inset-0 sm:w-full sm:h-full" />
                         <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-50 sm:absolute sm:inset-0" />
                         <div class="p-6 flex items-end sm:absolute sm:inset-0">
@@ -99,7 +99,7 @@
     <!-- PHILOSOPHY -->
     <section class="py-16 relative bg-white overflow-hidden">
         <div>
-            <div class="relative" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+            <div class="relative" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
                 <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
                     <div class="px-4 max-w-3xl mx-auto s lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
                         <div>
@@ -137,7 +137,9 @@
 </template>
 
 <script>
-import { ref} from 'vue';
+import {
+    ref
+} from 'vue';
 import 'tw-elements';
 
 export default {
@@ -189,7 +191,7 @@ export default {
 
 @media all and (max-width:639px) {
     .p_xs_img {
-        padding: 18px;
+        padding: 0 18px 0 18px;
     }
 }
 </style>

@@ -20,9 +20,9 @@
                 <!-- ABOUT BTN-->
                 <div class="py-3 px-4 space-y-2">
                     <div v-for="mobilepage in navigation.mobilepages" :key="mobilepage.name" class="flow-root">
-                        <router-link :to="mobilepage.href" class="-m-2 p-2 block font-light text-black" @click="mobileMenuOpen = false">{{ mobilepage.name }}</router-link>
+                        <router-link :to="mobilepage.href" class="-m-2 p-2 block font-light text-black" @click="mobileMenuOpen = false">{{ $t(mobilepage.name) }}</router-link>
                     </div>
-                     <button   @click="scrollToElement" class="transition_navbar flex items-center font-light text-black hover:text-black">Contact</button>
+                    <button @click="scrollToElement" class="transition_navbar flex items-center font-light text-black hover:text-black">Contact</button>
                 </div>
 
                 <div class="border-t border-gray-200 py-2 px-4 space-y-2">
@@ -125,7 +125,7 @@
                                         <!-- Other btn -->
                                         <!-- :class="{change_color_text: scrollPosition > 20}" -->
                                         <router-link v-for="page in navigation.pages" :key="page.name" :to="page.href" class="transition_navbar flex items-center font-light text-black hover:text-black">{{ $t(page.name) }}</router-link>
-                                        <button   @click="scrollToElement" class="transition_navbar flex items-center font-light text-black hover:text-black">{{$t("menus.contact")}}</button>
+                                        <button @click="scrollToElement" class="transition_navbar flex items-center font-light text-black hover:text-black">{{$t("menus.contact")}}</button>
 
                                     </div>
                                 </PopoverGroup>
@@ -160,7 +160,7 @@
 
                                     <!-- BOOKING DESKTOP -->
                                     <!-- :class="[{change_color_text: scrollPosition > 20},{change_border: scrollPosition > 20}]" -->
-                                    <router-link to="/booking" class="transition_navbar hidden font-light text-black border-black hover:text-white hover:bg-black lg:block custom-border-btn p-2 text-center uppercase">Réserver</router-link>
+                                    <router-link to="/booking" class="transition_navbar hidden font-light text-black border-black hover:text-white hover:bg-black lg:block custom-border-btn p-2 text-center uppercase">{{$t('menus.btn')}}</router-link>
 
                                     <!-- LANGUAGES DESKTOP -->
                                     <div class="border-t border-gray-200 py-6 pl-4 space-y-6">
@@ -225,7 +225,7 @@
     </header>
 </div>
 
-<router-view/>
+<router-view />
 
 <footer class=" bg-beige" aria-labelledby="footer-heading">
 
@@ -299,13 +299,13 @@
           <div class="flex ">
             <div v-for="item in navigationfooter.main" :key="item.name" class="px-5 py-2">
               <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
-                {{ item.name }}
+                {{ $t(item.name) }}
               </a>
             </div>
           </div>
           
             <div class="mt-8 xl:mt-0 lg:flex lg:items-center text-center">
-              <h3 class="lg:mr-4 sm:pb-2 text-sm font-semibold text-gray-400 tracking-wider uppercase">Subscribe to our newsletter</h3>
+              <h3 class="lg:mr-4 sm:pb-2 text-sm font-semibold text-gray-400 tracking-wider uppercase">{{$t("newsletter.text")}}</h3>
               <!-- <p class="mt-4 text-base text-gray-500">The latest news, articles, and resources, sent to your inbox weekly.</p> -->
               <form class="sm:flex sm:max-w-md">
                 <label for="email-address" class="sr-only">Email address</label>
@@ -325,14 +325,15 @@
             </a>
           </div>
           <div class="mt-8 sm:mt-3 md:mt-0 md:order-1">
-            <p class="text-center text-base text-gray-400">&copy; {{new Date().getFullYear()}} Paradiso Park, All rights reserved - Website carefully crafted by <a class="hover:text-teal-500" href="https://www.artexa.agency" target="_blank">Artexa Agency</a></p>
+            <p class="text-center text-base text-gray-400">&copy; {{new Date().getFullYear()}}  {{$t('copytext')}}  <a class="hover:text-teal-500" href="https://www.artexa.agency" target="_blank">Artexa Agency</a></p>
           </div>
         </div>
       </div>
     </div>
 
+   
     <vue-cookie-comply
-          :preferences="[
+      :preferences="[
               {
                 title: 'Required Information / Information requise',
                 description:
@@ -428,7 +429,7 @@ const languages = ['FR', 'EN', 'NL']
 
 const navigation = {
     mobilepages: [{
-            name: 'home.button',
+            name: 'menus.menu1',
             href: '/'
         },
         {
@@ -445,7 +446,7 @@ const navigation = {
         },
     ],
 
-// desktop menu
+    // desktop menu
     firstpages: [{
             name: 'menus.menu1',
             href: '/'
@@ -501,15 +502,15 @@ const navigation = {
 
 const navigationfooter = {
     main: [{
-            name: 'Terms',
+            name: 'term',
             href: '/terms'
         },
         {
-            name: 'Policy',
+            name: 'policy',
             href: '/privacy'
         },
         {
-            name: 'FAQ',
+            name: 'faq',
             href: '/faq'
         },
     ],
@@ -565,7 +566,6 @@ const navigationfooter = {
 
     ],
 }
-
 
 export default {
     components: {
@@ -684,18 +684,19 @@ export default {
             this.wa = true
         },
 
-       scrollToElement() {
-    const el = this.$refs.scrollToMe;
+        scrollToElement() {
+            const el = this.$refs.scrollToMe;
 
-    if (el) {
-      // Use el.scrollIntoView() to instantly scroll to the element
-      el.scrollIntoView({behavior: 'smooth'});
-    }
-  } 
+            if (el) {
+                // Use el.scrollIntoView() to instantly scroll to the element
+                el.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
 
+       
     },
-
-    
 
     setup() {
         const mobileMenuOpen = ref(false)
@@ -716,8 +717,8 @@ export default {
             }
         },
 
-        menus(){
-            return[
+        menus() {
+            return [
 
             ]
         },
