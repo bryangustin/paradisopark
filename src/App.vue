@@ -89,7 +89,7 @@
                                             <div class="services_menu relative flex">
                                                 <!-- :class="{change_color_text: scrollPosition > 20}" -->
                                                 <div class="cursor-pointer transition_navbar hover:text-black relative z-10 outline-none flex items-center justify-center transition-colors ease-out duration-200 font-light text-black">
-                                                    {{ $t(category.name) }}
+                                                    <router-link to="/services"> {{ $t(category.name) }}</router-link>
                                                     <span class="down_icon relative"></span>
                                                     <!-- <span :class="[open ? 'bg-transparent' : '', 'absolute -bottom-px inset-x-0 h-0.5 transition ease-out duration-200']" aria-hidden="true" /> -->
                                                 </div>
@@ -102,13 +102,30 @@
                                                     <!-- :class="{change_background: scrollPosition > 20}" -->
                                                     <div class="relative bg-white">
                                                         <div class="w-48">
-                                                            <div class="flex flex-col justify-center py-2">
-                                                                <div v-for="item in category.featured" :key="item.name" class="group relative px-2 mx-2 hover:text-white text-black hover:bg-black">
-                                                                    <router-link :to="item.href" class="transition_navbar mt-2 block font-light ">
+                                                            <div class="flex flex-col justify-center text-gray-800 py-2 px-3">
+                                                                <!-- <div v-for="item in category.featured" :key="item.name" class="group relative px-2 mx-2 hover:text-white text-black hover:bg-black">
+                                                                    <router-link :to="item.href" @click="scroll" class="transition_navbar mt-2 block font-light ">
                                                                         <span class="absolute z-10 inset-0" aria-hidden="true" />
                                                                         {{ $t(item.name) }}
                                                                     </router-link>
-                                                                </div>
+                                                                </div> -->
+
+                                                                <button @click="id1" class="transition_navbar mt-2 block font-light hover:bg-black hover:text-white text-left p-1  ">
+                                                                    <router-link to="/services">{{$t("menus.dMenu1")}}</router-link>
+                                                                </button>
+                                                                <button @click="id2" class="transition_navbar mt-2 block font-light hover:bg-black hover:text-white text-left p-1">
+                                                                    <router-link to="/services">{{$t("menus.dMenu2")}}</router-link>
+                                                                </button>
+                                                                <button @click="id3" class="transition_navbar mt-2 block font-light hover:bg-black hover:text-white text-left p-1">
+                                                                    <router-link to="/services">{{$t("menus.dMenu3")}}</router-link>
+                                                                </button>
+                                                                <button @click="id4" class="transition_navbar mt-2 block font-light hover:bg-black hover:text-white text-left p-1">
+                                                                    <router-link to="/services">{{$t("menus.dMenu4")}}</router-link>
+                                                                </button>
+                                                                <button @click="id5" class="transition_navbar mt-2 block font-light hover:bg-black hover:text-white text-left p-1">
+                                                                    <router-link to="/services">{{$t("menus.dMenu5")}}</router-link>
+                                                                </button>
+
                                                             </div>
                                                         </div>
                                                     </div>
@@ -455,19 +472,22 @@ const navigation = {
         name: 'menus.menu2',
         featured: [{
                 name: 'menus.dMenu1',
-                href: '/services',
+                href: '/services/#id1',
+                event: 'id1',
                 imageSrc: 'https://tailwindui.com/img/ecommerce-images/mega-menu-01-men-category-01.jpg',
                 imageAlt: 'Hats and sweaters on wood shelves next to various colors of t-shirts on hangers.',
             },
             {
                 name: 'menus.dMenu2',
-                href: '/services',
+                href: '/services/#id2',
+                event: 'id2',
                 imageSrc: 'img/candles.jpg',
                 imageAlt: 'Model wearing light heather gray t-shirt.',
             },
             {
                 name: 'menus.dMenu3',
-                href: '/services',
+                href: '/services/#id3',
+                event: 'id3',
                 imageSrc: 'img/dish.jpg',
                 imageAlt: 'Grey 6-panel baseball hat with black brim, black mountain graphic on front, and light heather gray body.',
             },
@@ -657,8 +677,8 @@ export default {
     },
 
     mounted() {
-        window.addEventListener('scroll', this.updateScroll);
-        this.scrollToElement();
+        // window.addEventListener('scroll', this.updateScroll);
+        // this.scrollToElement();
     },
 
     methods: {
@@ -690,7 +710,38 @@ export default {
                     behavior: 'smooth'
                 });
             }
-        }
+        },
+
+        id1() {
+            const element = document.getElementById('id1');
+            element.scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
+        id2() {
+            const element = document.getElementById('id2');
+            element.scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
+        id3() {
+            const element = document.getElementById('id3');
+            element.scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
+        id4() {
+            const element = document.getElementById('id4');
+            element.scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
+        id5() {
+            const element = document.getElementById('id5');
+            element.scrollIntoView({
+                behavior: 'smooth'
+            });
+        },
 
     },
 
@@ -781,6 +832,16 @@ select::-ms-expand {
     background-color: black !important;
     color: var(--color-white);
     border: none;
+}
+
+.cookie-comply__modal {
+    position: fixed !important;
+    z-index: 999;
+}
+
+button.cookie-comply__button:hover {
+    background: #000;
+    color: #fff;
 }
 
 a[type=button] {
