@@ -38,13 +38,13 @@
 
     <section class="md:pt-16 pt-16 lg:max-w-7xl lg:mx-auto  lg:px-8">
         <div class="">
-            <div class="md:mb-8 mb-0 px-4 w-full mx-auto text-center sm:px-6 lg:px-0">
+            <div class="md:mb-8 mb-0 w-4/5 mx-auto text-center">
                 <h2 style="font-size: 1.5em;">{{ $t("home.description") }}</h2>
             </div>
             <!-- Category section -->
             <div class="p_xs_img" aria-labelledby="category-heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
-                <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8 sm:px-5">
+                <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
                     <div class="group aspect-w-2 md:aspect-h-1 sm:aspect-h-1 aspect-h-2 overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
                         <img src="img/servicesCategory.jpeg" alt="" class="object-center absolute z-1 object-cover group-hover:opacity-75" />
                         <!-- <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-30" /> -->
@@ -152,6 +152,20 @@ export default {
             mobileMenuOpen,
         }
     },
+
+    method: {
+            scrollToElement() {
+            const el = this.$refs.scrollToMe;
+
+            if (el) {
+                 el.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    }
+
+
 }
 </script>
 

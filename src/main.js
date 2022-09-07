@@ -16,6 +16,9 @@ import 'tw-elements';
 import VuePictureSwipe from 'vue-picture-swipe';
 
 
+
+
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

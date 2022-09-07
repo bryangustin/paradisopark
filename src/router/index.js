@@ -99,9 +99,9 @@ const routes = [
     path: '/timeslot',
     name: 'Timeslot',
     component: Timeslot,
-    meta: {
-      requiresAuth: true
-    }
+    // meta: {
+    //   requiresAuth: true
+    // }
   },
   {
     path: '/additionaltimeslot',
@@ -117,9 +117,9 @@ const routes = [
     path: '/fullday',
     name: 'Fullday',
     component: Fullday,
-    meta: {
-       requiresAuth: true 
-      }
+    // meta: {
+    //    requiresAuth: true 
+    //   }
   },
   {
     path: '/additionalfullday',
