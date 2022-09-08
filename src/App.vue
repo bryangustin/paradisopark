@@ -239,7 +239,7 @@
 
 <router-view />
 
-<footer class=" bg-beige" aria-labelledby="footer-heading">
+<footer class=" bg-beige relative bg-white overflow-hidden" aria-labelledby="footer-heading">
 
     <!-- CONTACT FORM -->
     <div class="relative" id="contact" ref="scrollToMe">
