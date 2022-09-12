@@ -1,6 +1,6 @@
 <template>
 <main class="bg-white">
-    <section class="relative flex items-center justify-center overflow-hidden h-screen">
+    <section class="relative flex items-center justify-center overflow-hidden md:h-screen lg:h-screen xl:h-screen h-96">
         <div class="mt-10 z-30 lg:max-w-7xl lg:mx-auto lg:px-8 w-screen mx-auto" data-aos="fade-down" data-aos-anchor-placement="top">
             <h1 class="text-center lg:text-left uppercase mt-0 text-3xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl">{{ $t("home.title1") }} <br>{{ $t("home.title2") }} <br> {{ $t("home.title3") }}</h1>
             <!-- CAROUSEL-->
@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <video autoplay loop muted class="video_home absolute top-0 z-10 w-full">
+        <video autoplay loop muted class="video_home fixed top-0 left-0  w-full">
             <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
@@ -36,15 +36,15 @@
 
     </section>
 
-    <section class="md:pt-16 pt-16 lg:max-w-7xl lg:mx-auto  lg:px-8">
-        <div class="">
-            <div class="md:mb-8 mb-0 px-4 w-full mx-auto text-center sm:px-6 lg:px-0">
+    <section class="relative bg-white overflow-hidden md:pt-16 lg:pt-16 xl:pt-16 pt-8  ">
+        <div class="lg:max-w-7xl lg:mx-auto lg:px-8">
+            <div class="md:mb-8 mb-0 w-4/5 mx-auto text-center">
                 <h2 style="font-size: 1.5em;">{{ $t("home.description") }}</h2>
             </div>
             <!-- Category section -->
             <div class="p_xs_img" aria-labelledby="category-heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
-                <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8 sm:px-5">
+                <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">
                     <div class="group aspect-w-2 md:aspect-h-1 sm:aspect-h-1 aspect-h-2 overflow-hidden sm:aspect-h-1 sm:aspect-w-1 sm:row-span-2">
                         <img src="img/servicesCategory.jpeg" alt="" class="object-center absolute z-1 object-cover group-hover:opacity-75" />
                         <!-- <div aria-hidden="true" class="bg-gradient-to-b from-transparent to-black opacity-30" /> -->
@@ -152,6 +152,20 @@ export default {
             mobileMenuOpen,
         }
     },
+
+    method: {
+            scrollToElement() {
+            const el = this.$refs.scrollToMe;
+
+            if (el) {
+                 el.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        }
+    }
+
+
 }
 </script>
 

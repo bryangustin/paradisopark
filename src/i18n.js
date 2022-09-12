@@ -108,12 +108,12 @@ function loadLocaleMessages() {
                 timeslot: {
                     title: 'Reserve a time slot',
                     description: 'Looking for a break between meetings, or a moment in a unique place with a few friends or a working group?',
-                    button: '',
+                    button: 'BOOK',
                 },
                 fullday: {
                     title: 'Book an on-site stay',
                     description: 'Want to share an incredible moment with family, colleagues or friends?  Want to organise a group fitness retreat? Discover our offers for stays of one or more nights in the heart of the Paradiso Park Estate',
-                    button: '',
+                    button: 'BOOK',
                 },
             },
 
@@ -130,6 +130,13 @@ function loadLocaleMessages() {
                     phone: 'Phone number',
                     message: 'Your question',
                 },
+                placeholder:{
+                    name: 'Name',
+                    mail: 'Email',
+                    phone: 'Phone',
+                    message: 'Message',
+                },
+                submit:'Submit',
             },
 
             term:'Terms',
@@ -138,7 +145,7 @@ function loadLocaleMessages() {
             newsletter:{
                 text:'SUBSCRIBE TO OUR NEWSLETTER',
                 placeholder:'Enter your email',
-                btn:'Subscribe'
+                subscribe:"Subscribe"
             },
 
             // Privacy policy
@@ -389,6 +396,13 @@ function loadLocaleMessages() {
                     phone: 'Numéro de téléphone',
                     message: 'Votre question',
                 },
+                placeholder: {
+                    name: 'Nom',
+                    mail: 'E-mail',
+                    phone: 'téléphone',
+                    message: 'Message',
+                },
+                submit:'Soumettre',
             },
             term:'Termes',
             policy:'Vie privée',
@@ -396,7 +410,8 @@ function loadLocaleMessages() {
             newsletter:{
                 text:"S'ABONNER À NOTRE NEWSLETTER",
                 placeholder:'Entrez votre courriel',
-                btn:"S'abonner à"
+                btn:"S'abonner à",
+                subscribe:"S'abonner"
             },
 
              // Privacy policy
@@ -618,12 +633,12 @@ function loadLocaleMessages() {
                 timeslot: {
                     title: 'Reserveer een tijdslot',
                     description: 'Op zoek naar een pauze tussen twee vergaderingen, of een moment op een unieke plek met een paar vrienden of een werkgroep?',
-                    button: '',
+                    button: 'BOEKEN',
                 },
                 fullday: {
                     title: 'Boek een verblijf',
                     description: 'Wil je een ongelofelijk moment delen met familie, collega\'s of vrienden?  Wilt u een groeps fitness retraite organiseren? Ontdek onze aanbiedingen voor verblijven van één of meerdere nachten in het hart van het Paradiso Park Domein',
-                    button: '',
+                    button: 'BOEKEN',
                 },
             },
 
@@ -640,6 +655,13 @@ function loadLocaleMessages() {
                     phone: 'Telefoonnummer',
                     message: 'Jouw vraag',
                 },
+                placeholder:{
+                    name: 'Naam ',
+                    mail: 'Email',
+                    phone: 'Telefoon',
+                    message: 'Bericht',
+                },
+                submit:'Indienen',
             },
 
            term:'Voorwaarden',
@@ -648,7 +670,8 @@ function loadLocaleMessages() {
             newsletter:{
                 text:'ABONNEER U OP ONZE NIEUWSBRIEF',
                 placeholder:'Voer uw e-mail',
-                btn:'Inschrijven'
+                btn:'Inschrijven',
+                subscribe:'Abonneren'
             },
 
             // Privacy policy

@@ -106,12 +106,18 @@ const routes = [
   {
     path: '/additionaltimeslot',
     name: 'Additionaltimeslot',
-    component: Additionaltimeslot
+    component: Additionaltimeslot,
+    meta: {
+      requiresAuth: true 
+     }
   },
   {
     path: '/checkouttimeslot',
     name: 'Checkouttimeslot',
-    component: Checkouttimeslot
+    component: Checkouttimeslot,
+    meta: {
+      requiresAuth: true 
+     }
   },
   {
     path: '/fullday',
@@ -124,12 +130,18 @@ const routes = [
   {
     path: '/additionalfullday',
     name: 'Additionalfullday',
-    component: Additionalfullday
+    component: Additionalfullday,
+    meta: {
+      requiresAuth: true 
+     }
   },
   {
     path: '/checkoutfullday',
     name: 'Checkoutfullday',
-    component: Checkoutfullday
+    component: Checkoutfullday,
+    meta: {
+      requiresAuth: true 
+     }
   },
   {
     path: '/faq',

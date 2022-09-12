@@ -11,7 +11,7 @@
       </div>
 
       <div class="mt-5 lg:mt-20">
-        <div v-for="(person, featureIdx) in ourservices" :key="person.name" class="flex mb-5 flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-2 py-4 lg:items-center">
+        <div v-for="(person, featureIdx) in ourservices" :key="person.name" :id="person.id" :ref="person.ref" class="flex mb-5 flex-col-reverse lg:grid lg:grid-cols-12 lg:gap-x-2 py-4 lg:items-center">
           <div :class="[featureIdx % 2 === 0 ? 'lg:col-start-1' : 'lg:col-start-6 xl:col-start-5', 'mt-6 lg:mt-0 lg:row-start-1 lg:col-span-8 xl:col-span-7']">
             <h3 :class="[featureIdx % 2 === 0 ? 'text-center lg:text-left' : 'text-center lg:text-right']" class="text-xl font-medium uppercase" style="font-weight: 800;">{{ person.name }}</h3>
             <p :class="[featureIdx % 2 === 0 ? 'text-center lg:text-justify' : 'text-center lg:text-justify']" class="mt-2 text-base">{{ person.bio }}</p>
@@ -63,30 +63,36 @@ export default {
           imageUrl: 'img/sauna.jpg',
           bio: this.$t('services.sauna.description'),
           alt: this.$t('services.sauna.alt'),
+          id:'id1',
         },
         {
           name: this.$t('services.pool.title'),
           imageUrl: 'img/pool.jpg',
           bio: this.$t('services.pool.description'),
           alt: this.$t('services.pool.alt'),
+           id:'id2',
         },
         {
           name: this.$t('services.wintergarden.title'),
           imageUrl: 'img/wintergarden.jpg',
           bio: this.$t('services.wintergarden.description'),
           alt: this.$t('services.wintergarden.alt'),
+          id:'id3',
+
         },
         {
           name: this.$t('services.garden.title'),
           imageUrl: 'img/garden.jpg',
           bio: this.$t('services.garden.description'),
           alt: this.$t('services.garden.alt'),
+          id:'id4',
         },
         {
           name: this.$t('services.catering.title'),
           imageUrl: 'img/dish.jpg',
           bio: this.$t('services.catering.description'),
           alt: this.$t('services.catering.alt'),
+           id:'id5',
         },
       ]
     },
