@@ -2,14 +2,20 @@
 
     <header>
       <div class="bg-white">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto pt-16 pb-10 px-4 sm:pt-24 sm:pb-10 sm:px-6 lg:px-8">
           <div class="text-center">
             <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">My reservation</h2>
             <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Take control of your reservation.</p>
           </div>
         </div>
       </div>
-      {{user}}
+        
+      <div class="userDetail">
+      <ul>
+        <li ><span class="font-bold">Name: </span>{{user?.name}} </li>
+        <li ><span class="font-bold">Email: </span>{{user?.email}}</li>
+      </ul>
+      </div>
     </header>
 
     <main>
@@ -133,9 +139,9 @@ export default {
   },
 
 mounted() {
-
-    this.user = JSON.parse(localStorage.getItem('bigStore.user'))
-
+    let objData = JSON.parse(localStorage.getItem('bigStore.user'));
+    this.user = objData;
+    console.log("this is for text", objData);
     this.axios.defaults.headers.common['Content-Type'] = 'application/json'
     this.axios.defaults.headers.common['Authorization'] = 'Bearer ' + localStorage.getItem('bigStore.jwt')
     this.axios.get(process.env.VUE_APP_URL_API + `api/users/${this.user.id}/orders`,)
@@ -179,3 +185,14 @@ mounted() {
 
 }
 </script>
+
+<style>
+  .userDetail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .userDetail ul li{
+    padding-bottom: 10px;
+  }
+</style>
