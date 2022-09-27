@@ -397,12 +397,12 @@ export default {
       day:'',
       availableHourSlots:[],
       products:'',
-      amount:'',
-      guests:'',
+      amount:'50',
+      guests:'50',
       disableCalendar:'',
       selectedTimeSlots:'',
       // timeslots:'',
-      date:'',
+      date:'14-09-2022',
       attributes: [
         {
           key: 'today',

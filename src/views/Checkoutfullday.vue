@@ -296,7 +296,7 @@ export default {
       e.preventDefault()
       this.loading = true
       this.paymentProcessing = true;
-
+      console.log('checking payment');
       const {paymentMethod, error} = await this.stripe.createPaymentMethod(
           'card', this.cardElement, {
             billing_details: {

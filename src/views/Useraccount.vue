@@ -65,17 +65,10 @@
                       <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Finish Date:</span> {{order?.finishdate}}</li>
                       <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Start Time:</span> {{order?.starttime}}</li>
                       <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Finish Time:</span> {{order?.finishtime}}</li>
-                      <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Fullday:</span> {{order?.fullday}}</li>
                       <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Guests:</span> {{order?.guests}}</li>
-                      <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Amount:</span> {{order?.amount}}</li>
                       <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Product ID:</span> {{order?.product_id}}</li>
                       <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Transaction ID:</span> {{order?.transactionID}}</li>
-                      <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Card Brand:</span> {{order?.cardBrand}}</li>
-                      <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">last Four:</span> {{order?.lastFour}}</li>
-                      <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Expire:</span> {{order?.expire}}</li>
                       <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Product:</span> {{order?.product}}</li>
-                      <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Name:</span> {{order?.user.name}}</li>
-                      <li class=" bg-gray-200 py-1 text-sm rounded px-2 mr-3 mb-3"><span class="font-semibold">Email:</span> {{order?.user.email}}</li>
                     </ul>
                   </div>
                   <div>

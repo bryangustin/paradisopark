@@ -294,8 +294,8 @@ export default {
       let finishdate = moment(this.reservation.date).format('YYYY-M-DD')
       // let finishdate = '2022-5-15'
       let slot_id = this.reservation.slot
-
-      let verify = this.verifyfulldays.filter(e=>moment(this.reservation.date).format('YYYY-M-DD') >= moment(e.start).format('YYYY-M-DD') &&  moment(this.reservation.date).format('YYYY-M-DD') <= moment(e.start).format('YYYY-M-DD'))
+      let verify = [1];
+      // let verify = this.verifyfulldays.filter(e=>moment(this.reservation.date).format('YYYY-M-DD') >= moment(e.start).format('YYYY-M-DD') &&  moment(this.reservation.date).format('YYYY-M-DD') <= moment(e.start).format('YYYY-M-DD'))
       console.log(verify.length)
 
       await this.axios.post(process.env.VUE_APP_URL_API + 'api/verifytimeslots',
