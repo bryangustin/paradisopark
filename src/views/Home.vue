@@ -28,20 +28,25 @@
             </div>
         </div>
 
-        <video autoplay loop muted class="video_home fixed top-0 left-0  w-full">
-            <source src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
+        <video autoplay muted  loop="loop" class="video_home fixed top-0 left-0  w-full">
+            <source src="../assets/paradiso.webm" type="video/webm" />
+            <!-- Your browser does not support the video tag. -->
         </video>
         <img class="absolute w-full md:hidden" src="img/servicesCategory.jpeg" alt="pool" style="height:450px; filter: brightness(0.8);">
 
     </section>
 
-    <section class="relative bg-white overflow-hidden md:pt-16 lg:pt-16 xl:pt-16 pt-8  ">
+    <section class="relative text-lg text-gray-500 overflow-hidden md:pt-10  pt-5  bg-beige">
         <div class="lg:max-w-7xl lg:mx-auto lg:px-8">
             <div class="md:mb-8 mb-0 w-4/5 mx-auto text-center">
                 <h2 style="font-size: 1.5em;">{{ $t("home.description") }}</h2>
             </div>
-            <!-- Category section -->
+          </div>
+    </section>
+
+
+    <section class="relative bg-white overflow-hidden md:pt-10  pt-8  ">
+        <div class="lg:max-w-7xl lg:mx-auto lg:px-8">
             <div class="p_xs_img" aria-labelledby="category-heading" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 
                 <div class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:grid-rows-2 sm:gap-x-6 lg:gap-8">

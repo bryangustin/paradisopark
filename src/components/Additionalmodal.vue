@@ -24,9 +24,9 @@
                   <div class="flex justify-center max-w-12">
                     <div class="max-w-lg flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                       <div class="space-y-1 text-center">
-                        <div class="mt-1 flex justify-center max-w-7">
-                          <img :src="data.image" v-show="data.image != null" class="w-1/4" alt="car-image">
-                        </div>
+                        <div class="mt-1 mb-3 max-w-7">
+                          <img :src="data.image" :v-show="data.image!= false" class="w-1/5 mx-auto" alt="image">
+                         </div>
                         <div class="flex text-sm text-gray-600 justify-center">
                           <label class="custom-file-upload inline-flex items-center px-1 py-1 border border-transparent text-xs font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                             <input type="file" id="file" @change="attachFile"/>
@@ -122,7 +122,7 @@ export default {
         price: "",
         description: "",
         language:"",
-        image: false
+        image: false,
       }
     }
   },
@@ -130,7 +130,8 @@ export default {
   methods: {
     attachFile(event) {
       this.attachment = event.target.files[0];
-      console.log(this.attachment)
+      this.data.image = URL.createObjectURL(this.attachment);
+      this.data.name = this.attachment.name;
     },
     uploadFile(id) {
       if (this.attachment != null) {

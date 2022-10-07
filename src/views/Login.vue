@@ -1,11 +1,9 @@
 <template>
-  <div class="bg-top sm:bg-top min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8" style="background-image: url('img/pexels-burak-kebapci-1253049.jpeg'); ; background-size: cover;">
+  <div class="bg-top sm:bg-top min-h-screen bg-white flex flex-col justify-center py-12 sm:px-6 lg:px-8" style="background-image: url('img/pexels-burak-kebapci-1253049.jpeg'); ; background-size: cover;">
     <div class="sm:mx-auto sm:w-full sm:max-w-m">
       <div class="mx-auto w-full max-w-sm lg:w-96 bg-white p-5 rounded-lg">
         <div>
-          <h2 class="mt-6 text-3xl font-extrabold text-bord">
-            login
-          </h2>
+          <h2 class="mt-6 text-3xl font-extrabold text-bord">{{$t("login.title")}}</h2>
         </div>
 
         <div class="mt-8">
@@ -14,7 +12,7 @@
 
               <div>
                 <label for="email" class="block text-sm font-medium text-bord">
-                  email
+                  {{$t("login.email")}}
                 </label>
                 <div class="mt-1">
                   <input id="email" name="email" type="email" v-model="email" autocomplete="email" required="" class="appearance-none block w-full px-3 py-2 border border-bord rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gold focus:border-gold sm:text-sm" />
@@ -23,27 +21,33 @@
 
               <div class="space-y-1">
                 <label for="password" class="block text-sm font-medium text-bord">
-                  Password
+                  {{$t("login.pass")}}
                 </label>
                 <div class="mt-1">
                   <input id="password" name="password" type="password" v-model="password" autocomplete="current-password" required="" class="appearance-none block w-full px-3 py-2 border border-bord rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-gold focus:border-gold sm:text-sm" />
                 </div>
               </div>
 
-              <div class="flex items-center justify-center">
+              <div>
+                <button type="submit"  class="w-full flex justify-center py-2 px-4  bg-gray-800 text-white hover:bg-gray-900 rounded-md  text-sm font-semibold">
+                  {{$t("login.title")}}
+                </button>
+              </div>
+
+              <div class="flex items-center justify-between">
                 <div class="text-sm">
-                  <router-link to="/forgetpassword" class="font-medium text-bord hover:text-bord-light">
-                    forget password
+                  <router-link to="/Register" class="font-medium text-green-700 hover:text-green-900 underline font-semibold">
+                    {{$t("login.crete_btn")}}
+                  </router-link>
+                </div>
+                <div class="text-sm">
+                  <router-link to="/forgetpassword" class="font-medium text-green-700 hover:text-green-900 underline font-semibold">
+                    {{$t("login.forgot_pass")}}
                   </router-link>
                 </div>
               </div>
 
-              <div>
-                <button type="submit"  class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-gold bg-bord hover:bg-bord-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold">
-                  login
-                </button>
-              </div>
-            </form>
+           </form>
           </div>
           <div v-if="errorLogin  != 0" class="rounded-md bg-red-50 p-4 mt-10">
             <div class="flex">

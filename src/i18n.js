@@ -6,7 +6,6 @@ function loadLocaleMessages() {
     const messages = {
         en: {
 
-
           // desktopmenu
             menus: {
                 menu1: "Paradise",
@@ -18,8 +17,8 @@ function loadLocaleMessages() {
                 dMenu5: 'Caterer',
                 menu3: 'Bedrooms',
                 menu4: 'Events',
-                contact:'Contact',
-                btn:'BOOK NOW'
+                contact: 'Contact',
+                btn: 'BOOK NOW'
 
             },
             // Home
@@ -117,6 +116,15 @@ function loadLocaleMessages() {
                 },
             },
 
+            //Login Form
+            login: {
+                title:"Login",
+                email: "Email",
+                pass: "Password",
+                crete_btn: "Create An Account",
+                forgot_pass: "Forget Password",
+            },
+
             // Contact
             contact: {
                 title: 'Contact',
@@ -130,22 +138,22 @@ function loadLocaleMessages() {
                     phone: 'Phone number',
                     message: 'Your question',
                 },
-                placeholder:{
+                placeholder: {
                     name: 'Name',
                     mail: 'Email',
                     phone: 'Phone',
                     message: 'Message',
                 },
-                submit:'Submit',
+                submit: 'Submit',
             },
 
-            term:'Terms',
-            policy:'Policy',
-            faq:'FAQ',
-            newsletter:{
-                text:'SUBSCRIBE TO OUR NEWSLETTER',
-                placeholder:'Enter your email',
-                subscribe:"Subscribe"
+            term: 'Terms',
+            policy: 'Policy',
+            faq: 'FAQ',
+            newsletter: {
+                text: 'SUBSCRIBE TO OUR NEWSLETTER',
+                placeholder: 'Enter your email',
+                subscribe: "Subscribe"
             },
 
             // Privacy policy
@@ -261,20 +269,20 @@ function loadLocaleMessages() {
                 service: 'in order to be able to provide the service.',
             },
 
-            
-            copytext:'Paradise Park, All rights reserved - Website carefully crafted by',
 
-            
+            copytext: 'Paradiso Park, All rights reserved - Website carefully crafted by',
 
-            
+
+
+
 
 
         },
 
         fr: {
 
-             // desktopmenu
-             menus: {
+            // desktopmenu
+            menus: {
                 menu1: "Paradiso",
                 menu2: 'Services',
                 dMenu1: 'Sauna & Hammam',
@@ -284,8 +292,8 @@ function loadLocaleMessages() {
                 dMenu5: 'Traiteur',
                 menu3: 'Chambres',
                 menu4: 'Événements',
-                contact:'Contactez',
-                btn:'RÉSERVER'
+                contact: 'Contactez',
+                btn: 'RÉSERVER'
             },
 
             // Home
@@ -383,6 +391,15 @@ function loadLocaleMessages() {
                 },
             },
 
+            //Login Form
+            login: {
+                title:"Connexion",
+                email: "Email",
+                pass: "Mot de passe",
+                crete_btn: "Créer un compte",
+                forgot_pass: "Mot de passe oublié",
+            },
+
             // Contact
             contact: {
                 title: 'Contact',
@@ -402,19 +419,21 @@ function loadLocaleMessages() {
                     phone: 'téléphone',
                     message: 'Message',
                 },
-                submit:'Soumettre',
-            },
-            term:'Perme',
-            policy:'Politique',
-            faq:'FAQ',
-            newsletter:{
-                text:"S'ABONNER À NOTRE NEWSLETTER",
-                placeholder:'Entrez votre courriel',
-                btn:"S'abonner à",
-                subscribe:"S'abonner"
+                submit: 'Soumettre',
             },
 
-             // Privacy policy
+            term: 'Terms',
+            policy: 'Policy',
+            faq: 'FAQ', 
+
+            newsletter: {
+                text: "S'ABONNER À NOTRE NEWSLETTER",
+                placeholder: 'Entrez votre courriel',
+                btn: "S'abonner à",
+                subscribe: "S'abonner"
+            },
+
+            // Privacy policy
             privacy: {
                 title: "Politique de confidentialité & politique en matière de cookies",
                 sub1: "A. Introduction",
@@ -525,14 +544,14 @@ function loadLocaleMessages() {
                 service: 'afin de pouvoir fournir le service.',
             },
 
-            copytext:'Paradis Se Garer, Tous Droits Réservés - Site Soigneusement Conçu Par',
+            copytext: 'Paradiso Park, Tous Droits Réservés - Site Soigneusement Conçu Par',
 
         },
 
         nl: {
 
-             // desktopmenu
-             menus: {
+            // desktopmenu
+            menus: {
                 menu1: "Paradiso",
                 menu2: 'Services',
                 dMenu1: 'Sauna & Hammam',
@@ -542,8 +561,8 @@ function loadLocaleMessages() {
                 dMenu5: 'Traiteur',
                 menu3: 'Chambres',
                 menu4: 'Événements',
-                contact:'Contact',
-                btn:'Boeken'
+                contact: 'Contact',
+                btn: 'Boeken'
 
             },
 
@@ -642,6 +661,15 @@ function loadLocaleMessages() {
                 },
             },
 
+             //Login Form
+             login: {
+                title:"Login",
+                email: "Email",
+                pass: " Wachtwoord",
+                crete_btn: "Account aanmaken",
+                forgot_pass: " Wachtwoord vergeten",
+            },
+
             // Contact
             contact: {
                 title: 'Contact',
@@ -655,23 +683,24 @@ function loadLocaleMessages() {
                     phone: 'Telefoonnummer',
                     message: 'Jouw vraag',
                 },
-                placeholder:{
+                placeholder: {
                     name: 'Naam ',
                     mail: 'Email',
                     phone: 'Telefoon',
                     message: 'Bericht',
                 },
-                submit:'Indienen',
+                submit: 'Indienen',
             },
 
-           term:'Termijn',
-            policy:'Beleid',
-            faq:'FAQ',
-            newsletter:{
-                text:'ABONNEER U OP ONZE NIEUWSBRIEF',
-                placeholder:'Voer uw e-mail',
-                btn:'Inschrijven',
-                subscribe:'Abonneren'
+            term: 'Terms',
+            policy: 'Policy',
+            faq: 'FAQ',
+            
+            newsletter: {
+                text: 'ABONNEER U OP ONZE NIEUWSBRIEF',
+                placeholder: 'Voer uw e-mail',
+                btn: 'Inschrijven',
+                subscribe: 'Abonneren'
             },
 
             // Privacy policy
@@ -786,7 +815,7 @@ function loadLocaleMessages() {
                 service: 'om de dienst te kunnen verlenen.',
             },
 
-            copytext:'Paradijs Parc, Alle Rechten Voorbehouden - Website Zorgvuldig Gemaakt Door',
+            copytext: 'Paradiso Park, Alle Rechten Voorbehouden - Website Zorgvuldig Gemaakt Door',
 
         },
     }

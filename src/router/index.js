@@ -99,17 +99,17 @@ const routes = [
     path: '/timeslot',
     name: 'Timeslot',
     component: Timeslot,
-    meta: {
-      requiresAuth: true
-    }
+    // meta: {
+    //   requiresAuth: true
+    // }
   },
   {
     path: '/additionaltimeslot',
     name: 'Additionaltimeslot',
     component: Additionaltimeslot,
-    meta: {
-      requiresAuth: true 
-     }
+    // meta: {
+    //   requiresAuth: true 
+    //  }
   },
   {
     path: '/checkouttimeslot',
@@ -123,17 +123,17 @@ const routes = [
     path: '/fullday',
     name: 'Fullday',
     component: Fullday,
-    meta: {
-       requiresAuth: true 
-      }
+    // meta: {
+    //    requiresAuth: true 
+    //   }
   },
   {
     path: '/additionalfullday',
     name: 'Additionalfullday',
     component: Additionalfullday,
-    meta: {
-      requiresAuth: true 
-     }
+    // meta: {
+    //   requiresAuth: true 
+    //  }
   },
   {
     path: '/checkoutfullday',
@@ -234,7 +234,7 @@ router.beforeEach((to, from, next) => {
           next()
         }
         else {
-          next({ path: '/dashboard' })
+          next({path: '/useraccount'})
         }
       }
       else if (to.matched.some(record => record.meta.is_user)) {

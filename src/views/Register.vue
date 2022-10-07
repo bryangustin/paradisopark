@@ -1,33 +1,32 @@
 <template>
-  <div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+  <div class="min-h-screen bg-white flex flex-col justify-center py-12 sm:px-6 lg:px-8">
 
 
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-3xl">
-      <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
+      <div class="bg-white py-8 px-4 sm:rounded-lg sm:px-10">
         <form @submit.prevent="handleSubmit" class="space-y-6" novalidate>
           <div class="space-y-6 sm:pt-10 sm:space-y-5">
             <div class="sm:mx-auto sm:w-full bg-white">
 <!--              <img class="mx-auto h-12 w-auto" src="img/BELGA-MOBILITY.png" alt="Workflow" />-->
-              <h2 class="mt-6 text-center text-3xl font-extrabold text-gold">register
-              </h2>
+              <h2 class="mt-6 text-center text-3xl font-extrabold text-gold">Register</h2>
             </div>
             <div class="space-y-6 sm:space-y-5">
 
               <div class="grid grid-cols-6 gap-6">
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="first-name" class="block text-sm font-medium text-bord">firstname</label>
+                  <label for="first-name" class="block text-sm font-medium text-bord">Firstname</label>
                   <input v-model="firstname" type="text" name="first-name" id="first-name" autocomplete="given-name" class="max-w-lg block w-full shadow-sm focus:ring-gold focus:border-gold sm:max-w-xs sm:text-sm border-bord rounded-md" required/>
                 </div>
 
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="last-name" class="block text-sm font-medium text-bord">lastname</label>
+                  <label for="last-name" class="block text-sm font-medium text-bord">Lastname</label>
                   <input v-model="lastname" type="text" name="last-name" id="last-name" autocomplete="family-name" class="max-w-lg block w-full shadow-sm focus:ring-gold focus:border-gold sm:max-w-xs sm:text-sm border-bord rounded-md" required/>
                 </div>
 
 
 
                 <div class="col-span-6 sm:col-span-3">
-                  <label for="email" class="block text-sm font-medium text-bord">email</label>
+                  <label for="email" class="block text-sm font-medium text-bord">Email</label>
                   <input v-model="email" id="email" name="email" type="email" autocomplete="email" class="max-w-lg block w-full shadow-sm focus:ring-gold focus:border-gold sm:max-w-xs sm:text-sm border-bord rounded-md" required />
                 </div>
 
@@ -41,12 +40,12 @@
 
               <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
                 <label for="password" class="block text-sm font-medium text-bord sm:mt-px">
-                  footer
+                  Termes et conditions
                 </label>
                 <div class="flex mt-1 sm:mt-0 sm:col-span-2">
-                  <label><input type="checkbox" class="ios-switch green tinyswitch" checked required v-model="checked"/><div><div></div></div></label>
+                  <label><input type="checkbox" class="ios-switch green tinyswitch" required v-model="checked" /><div><div></div></div></label>
                   <p id="candidates-description" class="text-bord text-sm ml-2">
-                    terms <a href="/Terms" class="text-gold">terms</a> terms <a href="/Privacy" class="text-gold">terms</a> terms</p>
+                    En cochant cette case vous acceptez les <a href="/Terms" class="text-yellow-600">conditions d'utilisation</a> ainsi que le <a href="/Privacy" class="text-yellow-600">traitement des données personnelles</a> afin de pouvoir fournir le service.</p>
                 </div>
               </div>
             </div>
@@ -59,9 +58,6 @@
                   <ExclamationIcon class="h-5 w-5 text-red-400" aria-hidden="true" />
                 </div>
                 <div class="ml-3">
-                  <p class="text-sm font-medium text-red-800">
-                    error
-                  </p>
                   <p v-if="errorsRegister.password"  class="mt-2 text-red-800">- {{errorsRegister.password[0]}}</p>
                   <p v-if="errorsRegister.email" class="mt-2 text-red-800">- {{errorsRegister.email[0]}}</p>
                   <p v-if="prefixError" class="mt-2 text-red-800">- {{prefixError}}</p>
@@ -80,7 +76,7 @@
 
 
           <div>
-            <button type="submit" class="w-full flex justify-center py-2 px-4 text-white bg-black rounded-md shadow-sm">submit</button>
+            <button type="submit" class="w-full flex justify-center py-2 px-4 text-white bg-gray-700 hover:bg-gray-900 rounded-md shadow-sm">submit</button>
           </div>
         </form>
 

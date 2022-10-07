@@ -62,7 +62,7 @@
             <!-- Secondary navigation -->
             <!-- backdrop-blur-md backdrop-filter bg-opacity-10 bg-white -->
             <div>
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white">
                     <div>
                         <div class="h-16 flex items-center justify-between">
                             <!-- Logo (lg+) -->

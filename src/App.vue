@@ -203,23 +203,23 @@
                                         <transition enter-active-class="transition ease-out duration-200" enter-from-class="transform opacity-0 scale-95" enter-to-class="transform opacity-100 scale-100" leave-active-class="transition ease-in duration-75" leave-from-class="transform opacity-100 scale-100" leave-to-class="transform opacity-0 scale-95">
                                             <MenuItems class="origin-top-right absolute right-0 mt-2 w-48 shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
                                                 <MenuItem v-if="! this.setUser" v-slot="{ active }">
-                                                <router-link to="/Register" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
+                                                <router-link to="/Register" :class="[active ? 'bg-gray-900 text-white' : '', 'block px-4 py-2 text-sm text-gray-700 hover:text-white']">
                                                     Register
                                                 </router-link>
                                                 </MenuItem>
                                                 <MenuItem v-if="! this.setUser" v-slot="{ active }">
-                                                <router-link to="/Login" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
+                                                <router-link to="/Login" :class="[active ? 'bg-gray-900 text-white' : '', 'block px-4 py-2 text-sm text-gray-700 hover:text-white']">
                                                     Login
                                                 </router-link>
                                                 </MenuItem>
                                                 <MenuItem v-if="this.setUser" v-slot="{ active }">
-                                                <router-link to="/useraccount" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
+                                                <router-link to="/useraccount" :class="[active ? 'bg-gray-900 text-white' : '', 'block px-4 py-2 text-sm text-gray-700 hover:text-white']">
                                                     <span class="text-sm font-medium mt-1 uppercase">{{ this.setUser.name }}</span><br>
                                                     reservation
                                                 </router-link>
                                                 </MenuItem>
                                                 <MenuItem v-if="this.setUser" v-slot="{ active }">
-                                                <router-link v-on:click="logout" to="/" :class="[active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700']">
+                                                <router-link v-on:click="logout" to="/" :class="[active ? 'bg-gray-900 text-white' : '', 'block px-4 py-2 text-sm text-gray-700 hover:text-white']">
                                                     Logout
                                                 </router-link>
                                                 </MenuItem>
@@ -306,8 +306,8 @@
 
     <!-- FOOTER LINK -->
     <div class="bg-beige">
-      <div class="max-w-7xl mx-auto py-8 px-4 overflow-hidden sm:px-6 lg:px-8">
-        <nav class=" lg:flex sm:flex sm:flex-wrap text-center flex-wrap justify-between items-center pt-4 pb-4 border-t border-b border-gray-400" aria-label="Footer">
+      <div class="max-w-7xl mx-auto py-4 px-4 overflow-hidden sm:px-6 lg:px-8">
+        <nav class=" lg:flex sm:flex sm:flex-wrap text-center flex-wrap justify-center items-center pt-4 pb-4 " aria-label="Footer">
           <div class="flex ">
             <div v-for="item in navigationfooter.main" :key="item.name" class="px-5 py-2">
               <a :href="item.href" class="text-base text-gray-500 hover:text-gray-900">
@@ -316,9 +316,9 @@
             </div>
           </div>
           
-            <div class="mt-8 xl:mt-0 lg:flex lg:items-center text-center">
+            <!-- <div class="mt-8 xl:mt-0 lg:flex lg:items-center text-center">
               <h3 class="lg:mr-4 sm:pb-2 text-sm font-semibold text-gray-400 tracking-wider uppercase">{{$t("newsletter.text")}}</h3>
-              <!-- <p class="mt-4 text-base text-gray-500">The latest news, articles, and resources, sent to your inbox weekly.</p> -->
+              <p class="mt-4 text-base text-gray-500">The latest news, articles, and resources, sent to your inbox weekly.</p>
               <form class="sm:flex sm:max-w-md">
                 <label for="email-address" class="sr-only">Email address</label>
                 <input type="email" name="email-address" id="email-address" autocomplete="email" required="" class="appearance-none min-w-0 w-full bg-white border border-gray-300 shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-gray-400 focus:border-gray-400 focus:placeholder-gray-400" :placeholder="$t('newsletter.placeholder')" />
@@ -326,7 +326,7 @@
                   <button type="submit" class="w-full bg-white flex items-center justify-center py-2 px-4 text-base font-medium  text-black hover:text-white hover:bg-black focus:ring-0">{{$t('newsletter.subscribe')}}</button>
                 </div>
               </form>
-            </div>
+            </div> -->
           
         </nav>
         <div class="max-w-7xl mx-auto pt-8 md:flex md:items-center md:justify-between">
